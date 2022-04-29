@@ -1,0 +1,14 @@
+//com este path eu consigo direcionar o sequilize 
+//onde esta o banco de dados, onde será o arquivo de conexão,
+//onde ficará a pasta de migration. Onde ficará os nossos arquivos 
+//para ele se localizar e poder trabalhar.
+const { resolve } = require('path');
+//nesta configuração estou mostrando ao sequelize onde estão as configurações
+module.exports = {
+  //__dirname => para ele localizar a raiz do nosso projeto
+  //depois eu passo as pastas => 'src', 'config', 'database.js'
+  config: resolve(__dirname, 'src', 'config', 'database.js'),
+  'migrations-path': resolve(__dirname, 'src', 'database', 'migrations'),
+  'seeders-path': resolve(__dirname, 'src', 'database', 'seeds'),
+};
+
