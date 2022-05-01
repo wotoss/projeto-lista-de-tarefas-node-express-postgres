@@ -3,15 +3,12 @@
 //apenas importo o {Routes}
 import { Router } from 'express';
 
+import UserController from './app/controllers/UserController';
 
 //agora vamos instânciar a rota em uma constante const
 const routes = new Router();
 
-//montando as rotas.
-routes.get('/teste', (req, res) => {
-  return res.json({ ok:true });
-})
-
+routes.post('/users', UserController.store);
 
 //exportas as nosss rotas
 export default routes;

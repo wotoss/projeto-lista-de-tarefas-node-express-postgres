@@ -1,6 +1,9 @@
 //fazedno os imports do que sera usado.
 import express from "express";
 import routes from './routes';
+//estou pegando o index.js mas não preciso escrever por que quando entro na pasta 
+//database ele já me trás todo index.js por padrão.
+import './database';
 
 //fazendo a construção da classe App e do construtor.
 //construtor o que será inicializado.

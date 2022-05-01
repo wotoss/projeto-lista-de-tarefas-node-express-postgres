@@ -66,3 +66,7 @@ Neste arquivo .prettierrc
 13º => Para desfazer todas as migrations existente e consequentemente as tabelas da base de dados.
     a=> yarn sequelize db:migrate:undo:all
 
+14º => Instalar o bcrypt js para criptografar a senha
+    a=> yarn add bcrypt js
+
+

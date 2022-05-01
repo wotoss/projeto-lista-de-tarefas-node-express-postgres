@@ -31,7 +31,7 @@ module.exports = {
         },
         //coloquei password_hash porque não vamos gravar a senha e sim o hash criptografado
         //e ná hora que for logar será descriptogrado e fazemos a comparação.
-        passaword_hash: {
+        password_hash: {
           //esta senha ou  passaword_hash receberá um valor em string 
           type: Sequelize.STRING,
           //esta senha não poderá ser nulo.
@@ -43,7 +43,7 @@ module.exports = {
           type: Sequelize.DATE,
           allowNull: false,
         },
-        update_at: {
+        updated_at: {
           type: Sequelize.DATE,
           allowNull: false,
         }
