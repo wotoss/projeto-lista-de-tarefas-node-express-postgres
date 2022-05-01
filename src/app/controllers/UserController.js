@@ -21,6 +21,13 @@ class UserController {
       email,
     });
   }
+
+  //montando update atualização de usuario.
+  async update(req, res){
+
+    console.log(req.userId);
+    return res.json({ ok: true });
+  }
 }
 
 export default new UserController();
