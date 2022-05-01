@@ -29,5 +29,12 @@ class User extends Model{
     });
     return this; //para ele chamar o método init da classe
   }
+  // vou checar a senha com método
+  checkPassword(password){
+  // ele vai fazer a comparação da senha que estamos enviando (password) com as senha que temos no banco (password_hash) 
+  // o retorno é boolean => entaão caso a senha que ele
+  // comparou esteja certa retorna um true caso não esteja certa retorna um false
+    return bcrypt.compare(password,  this.password_hash);
+  }
 }
 export default User;

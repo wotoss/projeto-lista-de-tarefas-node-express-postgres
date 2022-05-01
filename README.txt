@@ -69,4 +69,14 @@ Neste arquivo .prettierrc
 14º => Instalar o bcrypt js para criptografar a senha
     a=> yarn add bcrypt js
 
+15º => Instalamos Json Web Token 
+    a => yarn add jsonwebtoken    
+
+ Padrões 
+ # importação de modulo, vem sempre antes de importação de arquivos.
+ # isto para todas as importações.
+> import jwt from 'jsonwebtoken';
+> import User from '../models/User';
+
+
 
