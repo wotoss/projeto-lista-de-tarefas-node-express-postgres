@@ -78,5 +78,8 @@ Neste arquivo .prettierrc
 > import jwt from 'jsonwebtoken';
 > import User from '../models/User';
 
+16º => Instalamos a biblioteca yup para trabalhar com validações de campos.
+    a => yarn add yup
+
 
 
